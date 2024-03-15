@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #8CC461;
+    color: white;
+    padding: 2%;
+}
+
+.scoreBoard{
+    border: 2px solid white;
+    border-radius: 13px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: auto;
+}
+
+.gameName{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47px;
+}
+
+.scores{
+    display: flex;
+    gap: 20px;
+    font-size: 17px;
+    color: #656565;
+    text-align: center;
+}
+
+.scores div{
+    width: 155px;
+    height: 100%;
+    background-color: white;
+    border-radius: 9px;
+    padding: 15px;
+    
+}
+
+.scores h2{
+    font-size: 4em;
+    color: #252525;
+    font-weight: 700;
+    line-height: 80px;
+}
+
+#gameRulesContener{
+    position: fixed;
+    right: 40px;
+    top: 36%;
+    transition: all 0.4s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.box-close {
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff0000;
+    text-decoration: none;
+    font-size: 44px;
+    border: 5px solid white;
+    border-radius: 50%;
+
+}
+
+.gameRules{
+    width: 300px;
+    padding: 15px;
+    padding-left: 30px;
+    background-color: #004429;
+    border: 5px solid white;
+    border-radius: 13px;
+}
+
+.gameRules h1{
+    text-align: center;
+}
+
+.gameRules ul{
+    list-style-type: square;
+}
+
+li{
+    margin: 14px;
+}
+
+li::marker {
+    color: #FFD600;
+    size: 20px;
+}
+  
+
+#rulesButton{
+    width: 100px;
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 7px;
+    background-color:#8CC461;
+    color: white;
+    font-size: 21px;
+}
