@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <main>
+    <main class="mainGame">
         <div class="scoreBoard">
             <div class="gameName">
                 <P>ROCK</P>
@@ -31,29 +31,27 @@
                 </div>
             </div>
         </div> 
-
-        <div class="mainGame">
-
-            <div class="gameDesign">
-                <div id="rock" class="gameIcons">
-                    <img src="../img/rock.png" width="80px" height="59px" >
+        <div>
+            <div class="layoutDesign">
+                <div>
+                    <p>YOU PICKED</p>
+                    <div id="userPicked" class="gameIcons">
+                        <img src="../img/rock.png" width="80px" height="80px" >
+                    </div>
+                </div>
+                
+                <div class="msgWindow">
+                    <h1> TIE UP</h1>
+                    <button onclick="playAgain()">REPLAY</button>
                 </div>
 
-                <div class="borderLine"></div>
-    
-                <div id="scissor" class="gameIcons">
-                    <img src="../img/scissor.png" width="37px" height="54px" >
+                <div>
+                    <p>PC PICKED</p>
+                    <div id="pcPicked" class="gameIcons">
+                        <img src="../img/scissor.png" width="80px" height="80px" >
+                    </div>
                 </div>
             </div>
-            
-            <div class="gameDesign">
-                <div class="borderLine" id="leftLine"></div>
-                <div id="paper" class="gameIcons">
-                    <img src="../img/paper.png" width="72px" height="72px" >
-                </div>
-                <div class="borderLine" id="rightLine"></div>
-            </div> 
-
         </div>
     </main>
     <div id="gameRulesContener">
@@ -73,7 +71,6 @@
     <button id="rulesButton" onclick="showRules()">Rules</button>
 
     <script src="../script.js"> </script>
-    <script src="script.js"> </script>
 </body>
 
 </html>

@@ -14,110 +14,48 @@ main{
     height: 90vh ;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
-}
-
-.scoreBoard{
-    border: 2px solid white;
-    border-radius: 13px;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.gameName{
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 47px;
-}
-
-.scores{
-    display: flex;
     gap: 20px;
-    font-size: 17px;
-    color: #656565;
-    text-align: center;
 }
 
-.scores div{
-    width: 155px;
-    height: 100%;
-    background-color: white;
-    border-radius: 9px;
-    padding: 15px;
-    
-}
-
-.scores h2{
-    font-size: 4em;
-    color: #252525;
-    font-weight: 700;
-    line-height: 80px;
-}
-
-.mainGame{
-    margin-top: 50px;
+.gameAward{
+    width: 504px;
+    height: 297px;
+    background-image: url(../img/starBackground.png);
     display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.msgWindow{
+    display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
 }
 
-.gameDesign{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.msgWindow h1{
+    font-size: 91px;
+}
+.msgWindow h3{
+    font-size: 41px;
 }
 
-.borderLine{
-    width: 150px;
-    height: 15px;
-    background-color: #000000;
-    overflow: hidden;
-}
-
-#leftLine{
-    position: absolute;
-    width: 108px;
-    rotate: 50deg;
-    top: -26px;
-    left: -66px;
-}
-
-#rightLine{
-    position: absolute;
-    width: 108px;
-    rotate: 310deg;
-    top: -26px;
-    right: -66px;
-}
-
-.gameIcons{
-    height: 150px;
-    width: 150px;
+.msgWindow button{
+    width: 174px;
+    border-radius: 9px;
+    margin-top: 40px;
+    padding: 5px ;
     background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 16px solid black;
-    border-radius: 50%;
+    color: #6B6B6B;
+    font-size: 15px;
+    border-color: transparent;
 }
 
-#rock{
-    border-color: #0074B6;
-}
-
-#paper{
-    border-color: #FFA943;
-}
-
-#scissor{
-    border-color: #BD00FF;
-}
+/* game rules design */
 
 #gameRulesContener{
     position: fixed;
